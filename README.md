@@ -12,6 +12,16 @@ A separate [DuckDB SQL workflow](sql/README.md) includes reusable views and
 eleven documented analyses for KPIs, trends, cohorts, delivery, sellers, and
 data-quality reconciliation.
 
+## Explore the project
+
+- [Interactive Streamlit dashboard](dashboard/app.py)
+- [Guided Jupyter notebook](notebooks/olist_walkthrough.ipynb)
+- [Advanced analysis and predictive modeling](ADVANCED_ANALYSIS.md)
+- [Entity-relationship diagram](docs/er_diagram.md)
+- [Data dictionary](docs/data_dictionary.md)
+- [Predictive-model documentation](docs/modeling.md)
+- [DuckDB SQL analysis](sql/README.md)
+
 The raw dataset is not stored in Git. Download it from Kaggle with the helper
 script below, after installing and configuring the Kaggle CLI.
 
@@ -26,6 +36,16 @@ python ./analysis/analyze.py
 The files are extracted into `data/raw/`, which is intentionally excluded from
 version control.
 
+For the complete workflow:
+
+```powershell
+python -m pip install -r requirements.txt
+python scripts/download_data.py
+python analysis/analyze.py
+python analysis/advanced_analysis.py
+streamlit run dashboard/app.py
+```
+
 ## Data source and terms
 
 - Source: Olist on Kaggle
@@ -34,3 +54,9 @@ version control.
   the data
 
 This repository is not affiliated with or endorsed by Olist or Kaggle.
+
+## License
+
+The repository's original code and documentation are available under the MIT
+License. The Olist dataset is not relicensed here; its use remains subject to
+the terms shown on the Kaggle dataset page.
