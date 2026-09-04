@@ -1,0 +1,6 @@
+target,model,metric,value,training_rows,test_rows
+Late delivery,Logistic regression,ROC AUC,0.6164648852964862,72357,24119
+Low review,Logistic regression,ROC AUC,0.6061247049681266,74004,24669
+Repeat purchase,Logistic regression,ROC AUC,0.5523130733566703,72072,24024
+Freight cost,Random forest,MAE,5.999862358593803,84487,28163
+Freight cost,Random forest,R²,0.5482137162565379,84487,28163

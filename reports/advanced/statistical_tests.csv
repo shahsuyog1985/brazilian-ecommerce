@@ -1,0 +1,4 @@
+analysis,test,statistic,p_value,observations
+Delivery delay vs review,Spearman rho,-0.17566941207881423,0.0,95824
+Late vs on-time review,Mann-Whitney U,150680825.5,0.0,95824
+Freight vs review,Spearman rho,-0.08677764343386464,5.640853204354978e-163,97917
