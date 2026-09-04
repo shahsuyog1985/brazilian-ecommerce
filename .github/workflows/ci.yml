@@ -1,0 +1,30 @@
+name: Validate analysis
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python scripts/download_data.py
+      - run: python analysis/analyze.py
+      - run: python analysis/advanced_analysis.py
+      - run: python -m unittest discover -s tests -v
+      - name: Validate DuckDB SQL
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import duckdb
+          con = duckdb.connect()
+          con.execute(Path('sql/01_create_views.sql').read_text())
+          con.execute(Path('sql/02_analysis.sql').read_text())
+          assert con.execute('select count(*) from order_facts').fetchone()[0] == 99441
+          PY
