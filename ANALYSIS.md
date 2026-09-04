@@ -80,4 +80,12 @@ python -m pip install kaggle pandas numpy
 python ./analysis/analyze.py
 ```
 
+## SQL analysis
+
+The repository also includes a [DuckDB SQL workflow](sql/README.md). It creates
+join-safe views at the order grain and provides eleven queries covering KPIs,
+monthly trends, categories, states, repeat purchasing, cohort retention,
+delivery performance, reviews, payments, seller concentration, and data-quality
+reconciliation.
+
 Source: [Brazilian E-Commerce Public Dataset by Olist on Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Check the Kaggle page for current license and usage terms.

@@ -8,6 +8,10 @@ geographic concentration, delivery performance, customer reviews, repeat
 purchasing, and payment behavior. Aggregate CSV reports and charts are stored
 under `reports/`.
 
+A separate [DuckDB SQL workflow](sql/README.md) includes reusable views and
+eleven documented analyses for KPIs, trends, cohorts, delivery, sellers, and
+data-quality reconciliation.
+
 The raw dataset is not stored in Git. Download it from Kaggle with the helper
 script below, after installing and configuring the Kaggle CLI.
 
