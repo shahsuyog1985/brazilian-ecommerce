@@ -1,0 +1,14 @@
+# Downloaded datasets
+data/
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
