@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Arial,sans-serif;fill:#17212b}.title{font-size:24px;font-weight:700}.sub{font-size:14px;fill:#5b6773}.label{font-size:13px}.value{font-size:13px;font-weight:700}</style>
+<text class="title" x="24" y="34">Delivery timing and customer reviews</text>
+<text class="sub" x="24" y="58">Mean review score by arrival relative to estimate</text>
+<text class="label" x="248" y="110" text-anchor="end">7+ days early</text>
+<rect x="260" y="96" width="610.0" height="20" rx="3" fill="#59a14f"/>
+<text class="value" x="878.0" y="111">4.32 / 5</text>
+<text class="label" x="248" y="144" text-anchor="end">1–6 days early</text>
+<rect x="260" y="130" width="593.6" height="20" rx="3" fill="#59a14f"/>
+<text class="value" x="861.6" y="145">4.20 / 5</text>
+<text class="label" x="248" y="178" text-anchor="end">0–3 days late</text>
+<rect x="260" y="164" width="532.3" height="20" rx="3" fill="#59a14f"/>
+<text class="value" x="800.3" y="179">3.77 / 5</text>
+<text class="label" x="248" y="212" text-anchor="end">4–7 days late</text>
+<rect x="260" y="198" width="327.4" height="20" rx="3" fill="#59a14f"/>
+<text class="value" x="595.4" y="213">2.32 / 5</text>
+<text class="label" x="248" y="246" text-anchor="end">8+ days late</text>
+<rect x="260" y="232" width="244.4" height="20" rx="3" fill="#59a14f"/>
+<text class="value" x="512.4" y="247">1.73 / 5</text>
+</svg>
